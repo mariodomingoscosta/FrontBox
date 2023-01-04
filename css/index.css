@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --tipo-letra: "Nunito", helvetica;
+    --verde-claro: #0bf96a;
+    --verde-escuro:#049a40;
+    --rosa-claro:#f3a0fd;
+    --rosa-esuro:#e10bf9;
+    --branco:#fff;
+    --preto:#000;
+}
+
+body{
+    background-color: var(--branco);
+    font-family: var(--tipo-letra);
+}
+
+a{
+    text-decoration: none;
+    color: var(--preto);
+}
+ul{
+    list-style: none;
+}
+
+p{
+    line-height: 21.82px;
+    padding: 0 10px;
+}
+
+.sessao-titulo{
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/*Header*/
+.menu-bg{
+    background-color: var(--verde-claro);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .5rem 2rem;
+}
+
+.nav-lista{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-link{
+    padding:1rem;
+}/*Fim header*/
+
+/*Intro*/
+.intro{
+    font-size: 3rem;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+hr{
+    border: none;
+    background-color: var(--rosa-esuro);
+    height: 2px;
+    width: 140px;
+    margin: 30px auto;
+}
+
+/*Somos*/
+.somos{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.somos-corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.somos-texto{
+    flex: 6 1 160px;
+}
+
+.sessao-iamgem{
+    flex: 1 1 350px;
+}
+
+/*Cursos*/
+
+.curso-corpo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.curso{
+    width: 280px;
+    margin: 0 20px;
+}
+
+.curso h3{
+    text-align: center;
+}
+
+.curso-titulo{
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 10px 0 5px 0;
+}
+
+.curso-descricao{
+    text-align: center;
+}
+
+/*Plans*/
+.planos{
+    background-color: var(--rosa-claro);
+    padding: 1.5rem 0;
+}
+
+.planos-corpo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:960px;
+    margin: 0 auto;
+}
+
+.plano{
+    width: 280px;
+    margin: 10px;
+    border: 2px solid var(--verde-claro);
+    padding: 1rem;
+}
+
+.plano-titulo{
+    margin:10px auto;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.plano-preco{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.plano-preco sup{
+    font-size: 1.2rem;
+}
+
+.plano-diviror{
+    width: 180px;
+    margin: 20px auto;
+}
+
+.plano-lista{
+    width: 195px;
+    margin:2rem 0;
+}
+
+.plano-lista-item{
+    margin: 10px 5px;
+}
+
+.plano-lista-item::before{
+    content: " ";
+    display: flex;
+    height: 5px;
+    width: 5px;
+    background-color: var(--verde-claro);
+    margin-left:-10px;
+}
+
+.plano-btn-comprar{
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: 2px solid var(--verde-claro);
+    text-transform: uppercase;
+    margin-top:0 auto ;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.plano:last-child{
+    background-color: var(--verde-claro);
+}
+
+/*Vantagens*/
+.vantagens{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vantagem{
+    max-width: 240px;
+    margin: 10px;
+}
+
+.vantagem-titulo{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.vantagem-titulo::before{
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.vantagem:nth-of-type(3n+1) .vantagem-titulo::before{
+    background-color: var(--verde-claro);
+}
+
+.vantagem:nth-of-type(3n+2) .vantagem-titulo::before{
+    background-color: var(--rosa-esuro);
+}
+
+.vantagem:nth-of-type(3n+3) .vantagem-titulo::before{
+    background-color: var(--verde-escuro);
+}
+
+/*Newsletter*/
+.newsletter{
+    background-color: var(--verde-claro);
+}
+
+.newsletter-container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-info{
+    padding-left: 10px;
+    flex: 1 1 260px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.newsletter-form{
+    flex: 2 1 260px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-info_titulo{
+    font-size: 2.62rem;
+    font-weight: bold;
+}
+
+.newsletter-info_descricao{
+    font-style: italic;
+}
+
+.newsletter-form_input{
+    flex: 3 1 260px;
+    font-size: 1.5rem;
+    width: 325px;
+    color: black;
+    font-style: italic;
+    font-family: var(--tipo-letra);
+    border: 10px solid var(--rosa-esuro);
+    padding: 10px;
+    margin: 0;
+    border-radius: 0px;
+}
+
+.newsletter-form_subimit{
+    width: 192px;
+    font-family: var(--tipo-letra);
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: var(--rosa-esuro);
+    color: black;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+}
+
+/*footer*/
+.footer{
+    background-color: var(--rosa-claro);
+    display: flex;
+    justify-content: space-between;
+    padding: 55px calc((100% - 960px)/2);
+}
+
+.footer-copyright, .footer-logo{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*menu mobile*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.menu-logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo h1{
+    color: #fff;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav .nav-lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width:730px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-lista{
+        display: none !important;
+    }
+
+    .login-button{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block !important;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
+}
